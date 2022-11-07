@@ -10,6 +10,7 @@ public class GoRestBaseUrl {
 
     @Before
     public void setup() {
+
         spec = new RequestSpecBuilder().setBaseUri("https://gorest.co.in/public/v1/").build();
     }
 

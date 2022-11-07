@@ -4,12 +4,12 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.specification.RequestSpecification;
 import org.junit.Before;
 
-public class JsonplaceholderBaseUrl {
+public class DummyRestApiBaseUrl {
+
     protected RequestSpecification spec;
+
     @Before
     public void setup() {
-
-        spec=new RequestSpecBuilder().setBaseUri("https://jsonplaceholder.typicode.com").build();
+        spec = new RequestSpecBuilder().setBaseUri("https://dummy.restapiexample.com/api/v1").build();
     }
-
 }
